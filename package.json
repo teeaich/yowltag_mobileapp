@@ -1,0 +1,31 @@
+{
+  "name": "yowltagApp",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "jest-expo": "~18.0.0",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "moment": "^2.18.1",
+    "native-base": "^2.3.0",
+    "react": "16.0.0-alpha.12",
+    "react-apollo": "^1.4.2",
+    "react-native": "^0.46.1",
+    "react-native-background-geolocation": "^2.8.3",
+    "react-native-vector-icons": "^4.2.0",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.1",
+    "redux-logger": "^3.0.6"
+  }
+}
