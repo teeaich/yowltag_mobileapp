@@ -4,6 +4,7 @@ const defaultState = {
   // Location record
   recordEnabled: false,
   recordName: false,
+  recordId: false,
   // Geolocation Config
   desiredAccuracy: 0,
   distanceFilter: 10,
@@ -27,17 +28,19 @@ export default function (state = defaultState, action) {
         ...action.payload
       };
     case 'START_RECORDDATA':
-      const { name } = action.payload;
+      const { name, id } = action.payload;
       return {
         ...state,
         recordEnabled: true,
-        recordName: name
+        recordName: name,
+        recordId: id
       };
     case 'STOP_RECORDDATA':
       return {
         ...state,
         recordEnabled: false,
-        recordName: false
+        recordName: false,
+        recordId: false
       };
     default:
       return state;

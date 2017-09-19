@@ -222,7 +222,7 @@ const withCreateRecorddataMutation = graphql(CREATE_RECORDDATA_MUTATION, {
     createRecorddata({key, data}) {
       return mutate({
         variables: {
-          recordId: ownProps.backgroundGeolocationState.recordName,
+          recordId: ownProps.backgroundGeolocationState.recordId,
           lat: data.coords.latitude,
           long: data.coords.longitude,
           dataObject: JSON.stringify(data),
